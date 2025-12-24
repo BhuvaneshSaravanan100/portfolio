@@ -5,26 +5,23 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 
 const projects = [
- 
   {
     title: 'Weather App',
-    desc: 'A fully responsive weather application that displays real-time climate data using OpenWeather API Built with modern React components and clean UI for fast and accurate weather updates..
-',
-    github: 'https://github.com/BhuvaneshSaravanan100/WeatherApp',  // Change YOUR_USERNAME
-    live: 'https://bhuvi-weather-app.netlify.app/'     // Same for now
+    desc: 'A fully responsive weather application that displays real-time climate data using OpenWeather API. Built with modern React components and clean UI for fast and accurate weather updates.',
+    github: 'https://github.com/BhuvaneshSaravanan100/WeatherApp',
+    live: 'https://bhuvi-weather-app.netlify.app/'
   },
   {
-    title: 'Ghibli Art', 
-    desc: ' An engaging web app that generates Studio-Ghibli-style AI artwork using Stability API   Features a smooth React UI with a Spring Boot backend handling secure API communication',
+    title: 'Ghibli Art',
+    desc: 'An engaging web app that generates Studio-Ghibli-style AI artwork using Stability API. Features a smooth React UI with a Spring Boot backend handling secure API communication.',
     github: 'https://github.com/BhuvaneshSaravanan100/Ghibli_Art_Generator-Front-End',
     live: 'https://ghibli-front-end.netlify.app/'
   },
   {
-    title: 'Expense Tracker On going',
-    desc: 'A full-stack expense management tool for tracking daily spending and category-wise analytics.Developed with Spring Boot REST APIs, React UI, and MySQL for structured data storage.   
-',
-    github: 'https://github.com/YOUR_USERNAME/portfolio', 
-    live: window.location.href  // Current page
+    title: 'Expense Tracker (Ongoing)',
+    desc: 'A full-stack expense management tool for tracking daily spending and category-wise analytics. Developed with Spring Boot REST APIs, React UI, and MySQL for structured data storage.',
+    github: 'https://github.com/BhuvaneshSaravanan100/portfolio',
+    live: '#'
   }
 ];
 
