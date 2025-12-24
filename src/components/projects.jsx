@@ -8,19 +8,21 @@ const projects = [
  
   {
     title: 'Weather App',
-    desc: 'Full-stack Todo app with React, Spring Boot, MySQL & JWT auth',
-    github: 'https://bhuvi-weather-app.netlify.app/',  // Change YOUR_USERNAME
+    desc: 'A fully responsive weather application that displays real-time climate data using OpenWeather API Built with modern React components and clean UI for fast and accurate weather updates..
+',
+    github: 'https://github.com/BhuvaneshSaravanan100/WeatherApp',  // Change YOUR_USERNAME
     live: 'https://bhuvi-weather-app.netlify.app/'     // Same for now
   },
   {
-    title: 'Weather Dashboard', 
-    desc: 'Real-time weather app with forecasts & API integration',
-    github: 'https://github.com/YOUR_USERNAME/weather-app',
-    live: 'https://github.com/YOUR_USERNAME/weather-app'
+    title: 'Ghibli Art', 
+    desc: ' An engaging web app that generates Studio-Ghibli-style AI artwork using Stability API   Features a smooth React UI with a Spring Boot backend handling secure API communication',
+    github: 'https://github.com/BhuvaneshSaravanan100/Ghibli_Art_Generator-Front-End',
+    live: 'https://ghibli-front-end.netlify.app/'
   },
   {
-    title: 'Portfolio Website',
-    desc: 'This responsive React + Bootstrap portfolio',
+    title: 'Expense Tracker On going',
+    desc: 'A full-stack expense management tool for tracking daily spending and category-wise analytics.Developed with Spring Boot REST APIs, React UI, and MySQL for structured data storage.   
+',
     github: 'https://github.com/YOUR_USERNAME/portfolio', 
     live: window.location.href  // Current page
   }
