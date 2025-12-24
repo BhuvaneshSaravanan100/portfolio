@@ -12,20 +12,7 @@ function About() {
             </p>
           </Col>
         </Row>
-        <Row className="glass-card p-5 mx-auto" style={{maxWidth: '800px'}}>
-          <Col md={4} className="text-center mb-4">
-            <div className="display-1 text-purple-400 mb-3">100+</div>
-            <h5>Projects Completed</h5>
-          </Col>
-          <Col md={4} className="text-center mb-4">
-            <div className="display-1 text-purple-400 mb-3">2+</div>
-            <h5>Years Experience</h5>
-          </Col>
-          <Col md={4} className="text-center mb-4">
-            <div className="display-1 text-purple-400 mb-3">24/7</div>
-            <h5>Available</h5>
-          </Col>
-        </Row>
+       
       </Container>
     </section>
   );
