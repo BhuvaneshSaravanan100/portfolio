@@ -48,7 +48,7 @@ function Contact() {
               <div className="d-flex align-items-center mb-4">
                 <FontAwesomeIcon icon={faEnvelope} className="text-2xl me-3 text-purple-400" />
                 <div>
-                  <h6>your.email@gmail.com</h6>
+                  <h6>bhuvaneshsaravanan100@gmail.com</h6>
                   <p className="text-slate-400 mb-0">Send me a message</p>
                 </div>
               </div>
@@ -56,7 +56,7 @@ function Contact() {
               <div className="d-flex align-items-center mb-4">
                 <FontAwesomeIcon icon={faPhone} className="text-2xl me-3 text-purple-400" />
                 <div>
-                  <h6>+91-XXXXXXXXXX</h6>
+                  <h6>+91-9600293550</h6>
                   <p className="text-slate-400 mb-0">Call anytime</p>
                 </div>
               </div>
@@ -64,7 +64,7 @@ function Contact() {
               <div className="d-flex align-items-center">
                 <FontAwesomeIcon icon={faMapMarkerAlt} className="text-2xl me-3 text-purple-400" />
                 <div>
-                  <h6>Narnaund, Haryana</h6>
+                  <h6>Coimbatore</h6>
                   <p className="text-slate-400 mb-0">India</p>
                 </div>
               </div>
