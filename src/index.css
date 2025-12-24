@@ -1,0 +1,206 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ================= HERO SECTION (animated) ================= */
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(-45deg, #5a46d6, #764ba2, #9b5de5, #4e54c8);
+  background-size: 300% 300%;
+  animation: hero-gradient 18s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Soft overlay for better text contrast */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    rgba(255, 255, 255, 0.18),
+    transparent 55%
+  );
+  pointer-events: none;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Text + button fade-up animation */
+.hero-content-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: hero-fade-up 1.2s ease-out 0.3s forwards;
+}
+
+/* Keyframes for hero */
+@keyframes hero-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes hero-fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= GLASS CARD ================= */
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.glass-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 35px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* ================= SKILL TAGS & BARS ================= */
+
+.skill-badge {
+  background: var(--primary-gradient);
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  margin: 0.25rem;
+  font-weight: 600;
+  animation: pulse 2s infinite;
+}
+
+/* Pulse animation for badges */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(248, 181, 0, 0);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px 4px rgba(248, 181, 0, 0.45);
+  }
+}
+
+/* Percentage bars */
+.skill-bar-wrapper {
+  margin-bottom: 0.75rem;
+}
+
+.skill-bar {
+  height: 10px;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 999px;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #fbbf24, #f97316, #ec4899);
+  box-shadow: 0 0 18px rgba(248, 181, 0, 0.6);
+  width: 0; /* React inline style sets final % */
+  transition: width 1s ease-out;
+}
+
+/* ================= NAVBAR (glass + underline) ================= */
+
+.glass-navbar {
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.5);
+  z-index: 50;
+}
+
+.brand-glow {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-shadow: 0 0 18px rgba(129, 140, 248, 0.7);
+}
+
+/* Nav links underline animation */
+.nav-link-custom {
+  position: relative;
+  color: #e5e7eb !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.nav-link-custom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #a855f7, #f97316);
+  transition: width 0.25s ease-out;
+}
+
+.nav-link-custom:hover::after,
+.nav-link-custom:focus::after,
+.nav-link-custom.active::after {
+  width: 100%;
+}
+
+.nav-link-custom:hover {
+  color: #f9fafb !important;
+}
+
+/* Social icons */
+.social-icon {
+  color: #e5e7eb;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease, color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.social-icon:hover {
+  color: #a855f7;
+  transform: translateY(-2px) scale(1.08);
+  text-shadow: 0 0 16px rgba(168, 85, 247, 0.8);
+}
+
+/* Toggle button */
+.nav-toggle-custom {
+  color: #e5e7eb;
+}
