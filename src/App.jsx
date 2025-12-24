@@ -19,7 +19,7 @@ function App() {
           <Contact />
         </main>
         <footer className="border-t border-slate-800 py-8 text-center text-xs text-slate-500">
-          © 2025 Your Name - Narnaund, Haryana. Built with React + Bootstrap.
+        © 2025 Bhuvaneshwaran S. All Rights Reserved.
         </footer>
       </div>
     </Router>
