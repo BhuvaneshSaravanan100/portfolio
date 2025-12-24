@@ -17,10 +17,10 @@ const projects = [
     live: 'https://ghibli-front-end.netlify.app/'
   },
   {
-    title: 'Expense Tracker',
+    title: 'Expense Tracker-Ongoing',
     desc: 'Full-stack expense tracking app using Spring Boot REST API, React UI, and MySQL database.',
     github: 'https://github.com/BhuvaneshSaravanan100/portfolio',
-    live: '#'
+    live: ''
   }
 ];
 
