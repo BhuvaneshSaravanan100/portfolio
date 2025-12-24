@@ -5,6 +5,7 @@ const skills = [
   { name: 'JavaScript', level: 70 },
   { name: 'Spring Boot', level: 80 },
   { name: 'Java', level: 88 },
+    { name: 'Python', level: 70 },
   { name: 'MySQL', level: 75 },
   { name: 'Bootstrap', level: 80 },
   { name: 'Tailwind CSS', level: 70 },
