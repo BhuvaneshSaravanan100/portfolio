@@ -8,7 +8,7 @@ function About() {
           <Col lg={8}>
             <h2 className="display-4 fw-bold mb-4">About Me</h2>
             <p className="lead text-slate-300">
-              Junior Full-Stack Developer from Narnaund, Haryana passionate about creating scalable web applications.
+           Motivated Junior Full Stack Developer with hands-on experience in Java, Spring Boot, and React.js. Proven ability to build dynamic web applications from concept to deployment, utilizing REST APIs and MySQL. Committed to writing efficient, maintainable code and eager to apply problem-solving skills in a fast-paced development environment.
             </p>
           </Col>
         </Row>
